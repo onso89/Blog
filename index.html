@@ -7,22 +7,84 @@
     <title>Blog</title>
   </head>
   <body>
-    <header class="h-container">
-      <div class="brand">
-        Blog
-      </div>
-      <nav class="navbar">
-        <div>
-          <ul class="nav-links">
-            <li><a class="nav-link" href="#">login</a></li>
-            <li><a class="nav-link" href="#">about</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-    <h1>Test</h1>
-    <p>some kind of feature for the website</p>
-    <p>another kind of feature for other services etc</p>
+    <div class="site">
+      <!-- Header -->
+      <header class="header" role="banner">
+        <div class="brand">
+          Blogacity
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="#">about</a></li>
+              <li><a class="nav-link" href="#">contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      
+      <!-- Main -->
+      <main class="content">
+        <!-- Hero -->
+        <section class="hero">
+          <div class="stack">
+            <h1 class="title">Hi, I am Alonso</h1>
+            <span>Welcome to my Blog! Here is where I share my experiences and writing ideas!
+              there are differnt things that need be added
+            </span>
+          </div>
+          <aside></aside>
+        </section>
+        <!-- Feed -->
+        <section class="stack-feed" role="feed">
+          <div class="stack-articles" role="feed">
+
+            <section class="card" role="article">
+              <div class="card-content">
+                <span class="card-meta">September 3, 2020 • 5 min read</span>
+                <a href="#" class="card-title">
+                  <h2>Some topic that need to fetch</h2>
+                </a>
+                <span class="card-subtitle">Responsive layouts are one of the more complicated problems in CSS. With the addition of CSS grids, we are now able to solve complex problems.</span>
+              </div>
+            </section>
+            <section class="card" role="article">
+              <div class="card-content">
+                <span class="card-meta">September 3, 2020 • 5 min read</span>
+                <a href="#" class="card-title">
+                  <h2>Some topic that need to fetch</h2>
+                </a>
+                <span class="card-subtitle">Responsive layouts are one of the more complicated problems in CSS. With the addition of CSS grids, we are now able to solve complex problems.</span>
+              </div>
+            </section>
+            <section class="card" role="article">
+              <div class="card-content">
+                <span class="card-meta">September 3, 2020 • 5 min read</span>
+                <a href="#" class="card-title">
+                  <h2>Some topic that need to fetch</h2>
+                </a>
+                <span class="card-subtitle">Responsive layouts are one of the more complicated problems in CSS. With the addition of CSS grids, we are now able to solve complex problems.</span>
+              </div>
+            </section>
+          </div>
+
+          <!-- Pagination -->
+          <aside class="pagination">
+            <a class="previous" href="/blogacity">
+              <span>Blogacity →</span>
+              <h3>View more articles</h3>
+            </a>
+          </aside>
+        </section>
+      
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <span>© 2020 by Alonso.</span>
+        <a href="https://twitter.com/vycke_" alt="Link to my Twitter page">twitter</a>
+        <a href="https://github.com/vycke" alt="Link to my Github page">github</a>
+      </footer>
+    </div>
+  
   </body>
 </html>

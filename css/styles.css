@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+/* ---------------Global------------------ */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,36 +11,85 @@
   color: #edf0f1;
   font-family: Roboto, sans-serif;
   font-weight: 300;
+  text-decoration-line: none;
+  list-style: none;
 }
+
+a[href]:hover,
+a:hover > * {
+  color: #00ccff;
+}
+
+/* ---------------Site------------------ */
+
+.site {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 100vh;
+}
+
+/* ---------------Header------------------ */
 
 header {
   display: flex;
-  /* border: solid blue 0.2rem; */
-  /* margin: auto; */
-  /* align-items: center; */
-  height: 6vh;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  padding: 2rem 2%;
 }
 
 .navbar,
 .nav-links,
 .brand {
   display: flex;
-  list-style: none;
-  align-items: center;
 }
 
 .brand {
   cursor: pointer;
-  /* border: solid red 0.1rem; */
+  margin: 0 1em;
+  font-weight: 500;
 }
+
 .navbar {
   flex: 1;
   justify-content: flex-end;
-  /* border: solid black 0.1rem; */
+  margin: 0 1em;
 }
 
 .nav-link {
   margin: 0.3em;
   text-decoration: none;
-  /* border: solid green 0.1em; */
+}
+
+/* ---------------Main------------------ */
+.content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+main {
+  display: block;
+  padding: 0 4%;
+}
+
+.hero {
+  display: grid;
+  row-gap: 2em;
+  column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+
+.stack {
+  display: block;
+}
+
+.aside {
+  display: block;
 }
