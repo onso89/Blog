@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 /* ---------------Global------------------ */
@@ -7,12 +8,28 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: rgb(26, 30, 32);
   color: #edf0f1;
   font-family: Roboto, sans-serif;
-  font-weight: 300;
   text-decoration-line: none;
   list-style: none;
+}
+
+html,
+body {
+  min-height: 100hv;
+  height: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.75;
+  background-color: rgb(22, 25, 27);
+  font-weight: 400;
+}
+
+[ckass^="stack"] > * {
+  margin: 0;
 }
 
 a[href]:hover,
@@ -25,8 +42,8 @@ a:hover > * {
 .site {
   display: flex;
   flex-direction: column;
+  height: 100%;
   max-width: 100%;
-  min-width: 100vh;
 }
 
 /* ---------------Header------------------ */
@@ -34,6 +51,7 @@ a:hover > * {
 header {
   display: flex;
   width: 100%;
+  max-width: 85%;
   margin: 0 auto;
   align-items: center;
   font-size: 1.2rem;
@@ -51,6 +69,7 @@ header {
   cursor: pointer;
   margin: 0 1em;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -62,17 +81,21 @@ header {
 .nav-link {
   margin: 0.3em;
   text-decoration: none;
+  padding-left: 1em;
 }
 
-/* ---------------Main------------------ */
+/* ---------------Content------------------ */
+main {
+  display: block;
+  padding: 2% 3%;
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
 .content {
   flex-grow: 1;
   width: 100%;
-}
-
-main {
-  display: block;
-  padding: 0 4%;
 }
 
 .hero {
@@ -80,16 +103,108 @@ main {
   row-gap: 2em;
   column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
   margin: 0 auto;
-  padding-top: 5%;
-  padding-bottom: 7%;
 }
 
-.stack {
-  display: block;
+.stack .title {
+  padding-bottom: 0.8rem;
+  font-size: 2.4em;
 }
 
-.aside {
-  display: block;
+.stack span {
+  font-size: 1.3em;
+}
+
+.stack-feed {
+  margin-top: 5em;
+}
+
+.stack-articles {
+  display: grid;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  width: 100%;
+  margin: 0;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  overflow: hidden;
+  column-gap: 2em;
+  row-gap: 2em;
+  min-width: 40px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content .card-meta,
+.card-subtitle {
+  color: #8a9eb5;
+}
+
+.card-title {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.card-subtitle {
+  font-size: 1.2em;
+}
+
+/* ---------------Pagination------------------ */
+.pagination {
+  display: grid;
+  grid-row-gap: 3em;
+  grid-column-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  width: 100%;
+}
+
+.pagination .previous {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.pagination a.previous {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  text-decoration-color: transparent;
+}
+
+.previous span {
+  text-transform: uppercase;
+  color: #8a9eb5;
+}
+
+.previous h3 {
+  font-size: 1.5em;
+}
+/* ---------------Footer------------------ */
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2em;
+  background: #333a41;
+  font-weight: 500;
+}
+
+.footer span {
+  flex-grow: 1;
+}
+
+.footer > * + * {
+  margin-left: 0.5rem;
+  padding: 0.5em 0.8em;
 }
