@@ -1,42 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
-/* ---------------Global------------------ */
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: #edf0f1;
-  font-family: Roboto, sans-serif;
-  text-decoration-line: none;
-  list-style: none;
-}
-
-html,
-body {
-  min-height: 100hv;
-  height: 100%;
-}
-
-body {
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.75;
-  background-color: rgb(22, 25, 27);
-  font-weight: 400;
-}
-
-[class^="stack"] > * {
-  margin: 0;
-}
-
-a[href]:hover,
-a:hover > * {
-  color: #00ccff;
-}
-
 .stack-medium > * + * {
   margin-top: 2rem;
 }
@@ -47,61 +8,6 @@ a:hover > * {
 
 article > * + * {
   margin-top: 1rem;
-}
-/* ---------------Site------------------ */
-
-.site {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  max-width: 100%;
-}
-
-/* ---------------Header------------------ */
-
-.header {
-  display: flex;
-  width: 100%;
-  max-width: 1268px;
-  margin: 0 auto;
-  align-items: center;
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  padding: 2.8% 1%;
-}
-
-.navbar,
-.nav-links,
-.brand {
-  display: flex;
-}
-
-.brand {
-  cursor: pointer;
-  margin: 0 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.navbar {
-  flex: 1;
-  justify-content: flex-end;
-  margin: 0 1em;
-}
-
-.nav-link {
-  margin: 0.3em;
-  text-decoration: none;
-  padding-left: 1em;
-}
-
-/* ---------------Content------------------ */
-
-.content {
-  flex-grow: 1;
-  width: 100%;
-  padding-top: 2.3%;
-  padding-bottom: 2.3%;
 }
 
 .grid {
@@ -164,25 +70,4 @@ time {
   border: 1px solid rgb(22, 25, 27);
   border-radius: 0.1em;
   content: "";
-}
-
-/* ---------------Footer------------------ */
-.footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2em;
-  background: #333a41;
-  font-weight: 500;
-}
-
-.footer span {
-  flex-grow: 1;
-}
-
-.footer > * + * {
-  margin-left: 0.5rem;
-  padding: 0.5em 0.8em;
 }

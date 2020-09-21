@@ -1,0 +1,37 @@
+/* ---------------Header------------------ */
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1268px;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  padding: 2.8% 1%;
+}
+
+.navbar,
+.nav-links,
+.brand {
+  display: flex;
+}
+
+.brand {
+  cursor: pointer;
+  margin: 0 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar {
+  flex: 1;
+  justify-content: flex-end;
+  margin: 0 1em;
+}
+
+.nav-link {
+  margin: 0.3em;
+  text-decoration: none;
+  padding-left: 1em;
+}
