@@ -1,4 +1,8 @@
-.stack-main-page {
+.h-articles {
+  padding: 2.8rem 1.8%;
+}
+
+.stack-articles-main {
   display: block;
   padding-left: 3%;
   padding-right: 3%;

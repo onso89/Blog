@@ -1,3 +1,7 @@
+.h-page {
+  padding: 2.8% 9.8%;
+}
+
 .stack-medium > * + * {
   margin-top: 2rem;
 }
