@@ -1,2 +1,3 @@
 # Blog
-Modern CSS Blog layout
+
+Modern CSS Personal Blog layout
