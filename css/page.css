@@ -38,8 +38,12 @@ time {
 }
 
 .title {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.2rem);
   margin-bottom: 3%;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 
 .post-meta span {
