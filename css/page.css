@@ -2,6 +2,10 @@
   padding: 2.8% 9.8%;
 }
 
+u {
+  text-decoration: underline;
+}
+
 .stack-medium > * + * {
   margin-top: 2rem;
 }
@@ -17,7 +21,7 @@ article > * + * {
 .grid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: minmax(23%, 1fr) minmax(auto, 70%) minmax(23%, 1fr);
+  grid-template-columns: minmax(5%, 1fr) minmax(auto, 72ch) minmax(5%, 1fr);
 }
 
 header {

@@ -44,3 +44,7 @@
 img {
   max-width: 100%;
 }
+
+[class^="articles-card"]:hover > * {
+  cursor: pointer;
+}
