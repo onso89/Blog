@@ -28,6 +28,33 @@ header {
   font-size: clamp(0.9rem, 1.3vw, 1.3rem);
 }
 
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1%;
+}
+
+.author img {
+  border-radius: 50%;
+  width: clamp(1.5rem, 4vw, 3rem);
+  height: clamp(1.5rem, 4vw, 3rem);
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: clamp(0.7rem, 1vw, 1.3rem);
+}
+
+.author-info {
+  margin-left: 2%;
+}
+
+.author-bio {
+  font-size: clamp(0.5rem, 1vw, 0.8rem);
+  color: #8a9eb5;
+}
+
 time {
   color: #8a9eb5;
 }

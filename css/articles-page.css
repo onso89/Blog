@@ -48,3 +48,14 @@ img {
 [class^="articles-card"]:hover > * {
   cursor: pointer;
 }
+
+figure {
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  font-size: 0.8rem;
+  bottom: 3%;
+  left: 2%;
+  color: #8a9eb5;
+}
